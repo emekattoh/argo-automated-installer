@@ -1,0 +1,4 @@
+kubernetes>=28.1.0
+PyYAML>=6.0
+click>=8.1.0
+rich>=13.7.0

@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: apache-test
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://charts.bitnami.com/bitnami
+    chart: apache
+    targetRevision: "*"
+    helm: {}
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: gitops-local
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true

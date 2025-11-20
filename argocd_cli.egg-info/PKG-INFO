@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: argocd-cli
+Version: 0.1.0
+Summary: ArgoCD CLI - Workflow-Based Application Automation
+Author: Your Name
+Requires-Python: >=3.8
+Requires-Dist: kubernetes>=28.1.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: click>=8.1.0
+Requires-Dist: rich>=13.7.0
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
